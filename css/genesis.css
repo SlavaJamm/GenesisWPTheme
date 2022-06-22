@@ -1,0 +1,2802 @@
+/* genesis custom theme */
+
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../fonts/Stolzl-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../fonts/Stolzl-Book.otf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../fonts/Stolzl-Light.otf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Stolzl';
+  src: url('../fonts/Stolzl-Thin.otf');
+  font-weight: 100;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #FFBC0F;
+}
+
+::selection {
+  color: #fff;
+  background: #FFBC0F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  transition-delay: 5s;
+  transition: 2s ease opacity;
+}
+
+#wrapper-navbar, #wrapper-footer{
+  display: none;
+}
+
+body{
+  font-size: 18px;
+  font-family: 'Stolzl';
+  font-weight: 200;
+  background-color: #fff;
+  padding-top: 55px;
+}
+
+a{
+  transition: color .5s ease;
+  font-weight: 500;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.section-one{
+  min-height: 1100px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/hero-min.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding-top: 50px;
+}
+.menu-wrapper{
+  /* background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Untitled-25.jpg'); */
+  background-color: #0c0c0c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 45%);
+  top: 0;
+  z-index: 10000;
+  height: 95px;
+}
+.organizers-page .menu-wrapper{
+  background-color: #F3F3F3;
+}
+.header-menu{
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  align-items: center;
+}
+.header-menu .logo img{
+  height: 50px;
+}
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu a{
+  color: #fff;
+  text-transform: uppercase;
+}
+.header-menu a:hover{
+  color: #FCB920;
+  text-decoration: none;
+}
+.link.apply-now{
+  display: flex;
+  align-items: center;
+}
+.link.apply-now a, .link.program a{
+  background-color: #FCB920;
+  width: 100%;
+  color: #000;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.link.apply-now a:hover, .link.program a:hover{
+  background-color: #fff;
+  color: #FCB920;
+}
+
+.section-one h1{
+  margin-top: 175px;
+  font-size: 60px;
+}
+.section-one p{
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+}
+.section-one p img{
+	width: 163px;
+    margin-left: 56px;
+}
+p.after-title-text{
+  margin-top: 20px;
+  font-size: 23px;
+}
+p.sub-title-text{
+  font-size: 26px;
+  margin-top: 60px;
+  width: 90%;
+}
+.title-wrap{
+  width: 61%;
+}
+.buttons-call-to-action{
+  margin-top: 50px;
+  font-size: 22px;
+}
+.title-wrap .buttons-call-to-action{
+  width: 70%;
+  justify-content: space-between;
+  display: flex;
+}
+.buttons-call-to-action .link.apply-now a,.buttons-call-to-action .link.program a{
+  padding: 13px 40px;
+}
+.link.reversed a{
+  background-color: unset;
+  border: 1px solid #FCB920;
+  color: #fff;
+  width: 212px;
+  transition: 1s ease all;
+}
+.link.reversed a:hover{
+  border-color: #000;
+  color: #FCB920!important  ;
+}
+
+
+.section-one-continue{
+  padding-top: 100px;
+  font-size: 26px;
+}
+.section-one-continue .top-text{
+  padding-right: 15x;
+  border-right: solid 1px #000;
+}
+.section-one-continue .top-text-date{
+  padding-left: 50px;
+}
+
+.join-header{
+  font-size: 26px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+.join-cart{    
+  position: relative;
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 180px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+}
+.join-cart h3{
+  font-size: 24px;
+}
+.join-cart.first{
+  margin-right: 40px;
+}
+.join-cart.second{
+  margin-left: 40px;
+}
+.join-cart .visual{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  top: -60px;
+  right: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+}
+.join-cart.first .visual{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Group-4036.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.join-cart.second .visual{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Group-4037-2.svg');
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+
+/* section-two */
+.section-two{
+  background-color: #F3F3F3;
+  padding-top: 180px;
+  padding-bottom: 100px;
+  font-size: 16px;
+}
+.section-two h2{
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 130px;
+}
+.section-two .item{
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0;
+}
+.section-two .item.Speakers .icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/1-1.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-two .item.Program .icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/2-1.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-two .item.Investment .icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/3.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-two .item.Support .icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/4.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-two .item.Community .icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/5.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-two .item.Development .icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/6.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-two .icon{
+  height: 115px;
+  width: 115px;
+  display: inline-block;
+}
+.section-two h3{
+  font-size: 24px;
+  margin-top: 20px;
+}
+.section-two .item p{
+  padding: 0 32px;
+}
+.section-two .item.Program p, .section-two .item.Community p {
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+/* section-three  */
+.section-three{
+  min-height: 1310px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/3section.png');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.section-three h1{
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.section-three .link{
+  display: inline-block;
+
+}
+
+/* section-four  */
+.section-four{
+  padding-top: 100px;
+  padding-bottom: 250px;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.section-four .read-more{
+  font-size: 22px;
+}
+.section-four .buttons-call-to-action{
+  margin: 0;
+}
+.section-four .link.reversed a{
+  height: 55px;
+  color: #000;
+  font-size: 18px;
+  width: fit-content;
+  padding: 13px 26px;
+}
+.section-four .link.reversed a svg{
+  margin-left: 10px;
+}
+.section-four .Organizers, .section-four .Technology, .section-four .Partners{
+  display: flex;
+  align-items: center;
+}
+.section-four img{
+  max-height: 60px;
+  width: 100%;
+}
+.partner{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+  margin: 25px 0px;
+}
+.partner.appsfl a img{
+  max-height: unset;
+}
+.partner a{
+  padding: 50px;
+}
+/* .partner a:hover{
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(359deg) brightness(119%) contrast(119);
+} */
+.img-partner-link{
+  height: 60px;
+  width: 150px;
+}
+.p-genesis .img-partner-link {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/genesis-logo.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-genesis .img-partner-link:hover {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Genesis_yellow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-meta .img-partner-link {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Meta_Black.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-meta .img-partner-link:hover {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Meta_yellow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-aws .img-partner-link {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/aws.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-aws:hover .img-partner-link {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/AWS_yellow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-aws .img-partner-link {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/aws.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.p-aws .img-partner-link:hover {
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/AWS_yellow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.flyerone{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Asset-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.horizoncapital{
+  width: 180px;
+}
+.img-partner-link.horizoncapital{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/horizon-capital-2.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.horizoncapital:hover{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/horizon_yellow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.appsflyer{
+  height: 170px;
+  width: 180px;
+}
+.img-partner-link.appsflyer{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/apps-flyer.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.appsflyer:hover{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/appsflyer_yellow.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.awesomic{
+  height: 170px;
+  width: 180px;
+}
+.img-partner-link.awesomic{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/06/image-23.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.awesomic:hover{
+  /**/
+}
+.img-partner-link.legalnodes{
+  width: 120px;
+}
+.img-partner-link.legalnodes{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/06/legal_nodes-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.legalnodes:hover{
+  /**/
+}
+.img-partner-link.notion{
+  height: 170px;
+  width: 140px;
+}
+.img-partner-link.notion{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/06/Frame.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.notion:hover{
+  /**/
+}
+.img-partner-link.zendesk{
+  height: 170px;
+  width: 180px;
+}
+.img-partner-link.zendesk{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/06/Frame-1.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img-partner-link.zendesk:hover{
+  /**/
+}
+
+/* section-five  */
+.section-five{
+  text-align: center;
+  font-weight: 400;
+  background-color: #F3F3F3;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+.section-five h2{
+  font-size: 46px;
+}
+.section-five p{
+  font-size: 26px;
+  width: 65%;
+  display: inline-block;
+  margin: 25px 0;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+.section-five .program{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/image-4.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  border-radius: 18px;
+  padding: 30px 34px;
+  text-align: left;
+  margin: 25px 0;
+  min-height: 340px;
+  position: relative;
+}
+.section-five .program h3{
+  margin-bottom: 20px;
+}
+.section-five .program ul{
+  padding-left: 50px;
+}
+.section-five .program ul li{
+    list-style-type: none;
+    font-weight: 100;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 16px;
+}
+.section-five .program .count{
+  position: absolute;
+  top: -2px;
+  left: -50px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.section-five .program .program-icon{
+  position: absolute;
+  height: 70px;
+  right: 20px;
+  bottom: -20px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+}
+.section-five .program.one .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/1-4.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.two .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/2-4.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.three .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/3-2.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.four .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/4-1.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.five .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/5-2.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.six .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/6-1.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.seven .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/7-1.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-five .program.eight .program-icon{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/8-1.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+/* section-six  */
+.section-six{
+  padding: 200px 0;
+  padding-bottom: 100px;
+}
+.section-six h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  margin-bottom: 115px;
+}
+.section-six .pitch-day,.section-six .meta-certification,.section-six .journey-reviews{
+  width: 64%;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+  border-radius: 18px;
+  padding: 28px 40px;    
+  background: #fff;
+}
+.section-six .for-section-six.container{
+  position: relative;
+}
+.section-six .pitch-day-img, .section-six .meta-certification-img{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/image-10.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  height: 445px;
+  width: 600px;
+  z-index: -1;
+  border-radius: 18px;
+}
+.section-six .journey-reviews-img{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/image-22-min.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: -50px;
+  height: 445px;
+  width: 600px;
+  z-index: -1;
+  border-radius: 18px;
+}
+/* icons */
+.pitch-day,.meta-certification,.journey-reviews{
+  position: relative;
+}
+.section-six-icon{
+  position: absolute;
+  height: 70px;
+  right: 20px;
+  top: -20px;
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);  
+}
+.section-six-icon-first{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Group-4038-1.svg');
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-six-icon-second{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Group-4039-1.svg');
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-six-icon-third{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/gears.svg');
+  background-position: center;
+  background-size: 127%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.section-six .for-section-six.container.with-meta{
+  margin-top: 200px;
+  text-align: right;
+}
+.section-six .for-section-six.container.with-aws{
+  margin-top: 200px;
+}
+.section-six .meta-certification{
+  display: inline-block;
+  text-align: left;
+}
+.section-six .meta-certification-img{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/image-11.png');
+  background-position: center;
+  background-size: cover;
+  height: 523px;
+  left: 0;
+  top: -110px;
+}
+.section-six .journey-reviews-img{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/image-22-min.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 523px;
+  right: 0;
+  top: -110px;
+}
+/* reversed button template */
+.section-six .buttons-call-to-action{
+  margin-top: 0;
+}
+.section-six .link.reversed a{
+  height: 55px;
+  color: #000;
+  font-size: 18px;
+  width: fit-content;
+  padding: 13px 26px;
+}
+.section-six .link.reversed a svg{
+  margin-left: 10px;
+  width: 20px;
+}
+
+/* section seven  */
+.section-seven{
+  min-height: 4020px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/bg-big.png');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-top: 540px;
+}
+.section-seven h2{
+  font-size: 46px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  margin-top: 80px;
+}
+.section-seven h3{
+  font-size: 20px;
+}
+.section-seven .position{
+  font-weight: 100;
+}
+.section-seven .avatar{
+  height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.section-seven .avatar.one{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/1-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.two{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/2-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.three{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/3-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.four{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/4-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.five{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/5-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.six{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/6-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.seven{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/7-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.eight{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/8-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.nine{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/9-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.ten{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/10-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.eleven{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/11-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.twelve{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/12-min.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.section-seven .avatar.thirteen{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/13-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.fourteen{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/14-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.fiveteen{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/15-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.sixteen{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/16-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.seventeen{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/17-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .avatar.eighteen{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/18-min.png');
+  background-position: center;
+  background-size: cover;
+}
+.section-seven .human{
+  margin-bottom: 20px;
+}
+/* timeline */
+.section-seven .timeline h2{
+  margin-bottom: 60px;
+  text-align: center;
+  margin-top: 105px;
+}
+.timeline-preview-wrap{
+  position: relative;
+  height: 300px;    
+  width: 120%;
+  margin-left: -10%;
+}
+.section-seven .timeline-preview{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/06/timeline07.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* section-eight */
+.section-eight{
+  padding: 200px 0;
+  padding-bottom: 75px;
+}
+.section-eight .ua{
+  width: 64%;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+  border-radius: 18px;
+  padding: 28px 40px;    
+  background: #fff;
+}
+.section-eight .for-section-eight.container{
+  position: relative;
+}
+.section-eight .for-section-eight.container.with-ua{
+  margin-top: 70px;
+  text-align: right;
+  margin-bottom: 400px;
+}
+.section-eight .ua{
+  display: inline-block;
+  text-align: left;
+}
+.section-eight .ua-img{
+  position: absolute;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/image-20.png');
+  background-position: center;
+  background-size: cover;
+  height: 490px;
+  width: 600px;
+  z-index: -1;
+  left: 0;
+  top: -110px;
+  border-radius: 18px;
+}
+.section-eight .join-us{
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.section-eight .buttons-call-to-action{
+  font-size: 22px;
+  position: absolute;
+  margin: 0;
+  right: 60px;
+}
+.section-eight .stand-with-ua-img{
+  position: absolute;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/Mask-group-1.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 20px;
+  bottom: -170px;
+  width: 500px;
+  height: 40px;
+}
+
+/* section-nine  */
+.section-nine{
+  font-weight: 400;
+  background-color: #F3F3F3;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+.section-nine h2{
+  text-align: center;
+  font-size: 46px;
+  text-transform: uppercase;
+}
+.section-nine p{
+  text-align: center;
+  font-size: 26px;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0;
+}
+.section-nine .sub-title{
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.section-nine .review-badge{
+  border-radius: 8px;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  text-align: center;
+  min-height: 175px;
+  padding-top: 70px;
+  padding-bottom: 20px;
+  border-radius: 18px;
+}
+.section-nine .review-badge p{
+  font-weight: 500;
+}
+.top-review-badge{
+  position: absolute;
+  top: -30px;
+  left: 70px;
+  width: 240px;
+  background-color: #FFBC0F;
+  font-size: 32px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px 0;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+}
+
+/* slider-review  */
+.slider-review{
+  margin-top: 100px;
+}
+.review-body{
+  padding: 45px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/Group-3940.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-radius: 8%;
+  text-align: left;
+  font-size: 22px;
+  margin: 10px;
+}
+.review-body .avatar{
+  width: 100px;
+  height: 100px; 
+  position: absolute;
+}
+.review-body p{
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 100;
+}
+.review-body.one .avatar{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/Mask-group-1-1.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.review-body.two .avatar{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Александр-Корженко.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.review-body.three .avatar{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Владимир-Лещенко.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.review-body.four .avatar{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Мария-Бартин.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.review-body.five .avatar{
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Максим-Сундалов.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.review-body .name{
+  padding-left: 130px;
+  margin-top: 15px;
+  font-size: 26px;
+  color: #FFBC0F;
+}
+.review-body .position{
+  padding-left: 130px;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* section-ten  */
+.section-ten{
+  text-align: center;
+  font-weight: 400;
+  background-color: #fff;
+  padding-top: 180px;
+  padding-bottom: 100px;
+}
+.section-ten h2{
+  text-align: center;
+  font-size: 46px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-ten p{
+  font-size: 22px;
+  display: inline-block;
+  font-weight: 200;
+  margin: 0;
+  text-align: left;
+}
+.section-ten .faq-container{
+  text-align: left;
+}
+.faq-container h3{
+  border-bottom: #000 1px solid;
+  margin: 0;
+  position: relative; 
+  font-weight: 300;
+  font-size: 28px;
+  padding: 30px 0px;
+}
+h3.ui-state-active{
+  border-bottom: none;
+}
+.faq-container p{
+  border-bottom: 1px solid #000;
+  padding: 30px 30px;
+  margin: 0;
+  display: block;
+  height: 100%;
+}
+.icon-o-c{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFBC0F;
+  border: 1px solid #000;
+}
+.faq-container svg{
+  height: 60%;
+  width: 60%;
+  transition: .5s ease;
+}
+.faq-container h3.ui-state-active svg{
+  transform: rotate(45deg);
+}
+.section-ten .sub-title{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.section-ten .sub-title a{
+  color: #FFBC0F;
+}
+
+/* section-footer  */
+.section-footer{
+  min-height: 815px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/footer-min.png');
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  color: #FFFFFF;
+  padding-top: 420px;
+  font-size: 18px;
+}
+.section-footer a{
+  color: #FFFFFF;
+  font-weight: 200;
+}
+.section-footer h3{
+  color: #FFBC0F;
+  font-size: 22px;
+}
+.section-footer h3 a{
+  color: #FFBC0F;
+  font-size: 22px;
+  font-weight: 500;
+}
+.section-footer .mail{
+  margin-bottom: 40px;
+}
+.section-footer a{
+  font-size: 18px;
+}
+.menu-links{
+  display: flex;
+  flex-direction: column;
+}
+.soc-links{
+  display: flex;
+  flex-direction: column;
+}
+.section-footer a:hover{
+  color: #FFBC0F;
+}
+.section-footer h3 a:hover{
+  color: #FFFFFF;
+}
+
+
+
+/* form-page */
+.form-page .section-one{
+  min-height: 2144px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/form-page-bg-min.png');
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.form-page h1{
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.wpcf7{
+  max-width: unset;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
+.wpcf7 .wpcf7-form p{
+  width: 45%;
+}
+.wpcf7 .wpcf7-form p:nth-child(5){
+  width: 95%;
+}
+.wpcf7 .wpcf7-form p:nth-child(6){
+  width: 95%;
+}
+.wpcf7 .wpcf7-form p:nth-child(7){
+  width: 95%;
+}
+.wpcf7 .wpcf7-form p:nth-child(10){
+  /* margin-top: -25px; */
+}
+.wpcf7 .wpcf7-form p:nth-child(12){
+  width: 95%;
+  display: block;
+}
+.wpcf7 .wpcf7-form p:nth-child(13){
+  width: 95%;
+  display: block;
+}
+.wpcf7 .wpcf7-form p:nth-child(12) label{
+  height: 20px;
+  padding-left: 30px;
+  margin: 0;
+}
+.wpcf7 .wpcf7-form p:nth-child(12) label{
+  position: relative;
+  cursor: pointer;
+  padding: 0;  
+}
+/* checkbox */
+.wpcf7 .wpcf7-form input{
+  padding: 25px 20px;
+}
+.wpcf7 .wpcf7-form select{
+  height: unset;
+  width: 100%;
+  padding: 15px 15px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 15px;
+  width: 20px;
+}
+input[type="checkbox"]:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: -2px;
+  width: 20px;
+  height: 20px;
+  background: #252525;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+}
+input[type="checkbox"]:disabled {
+  color: #b8b8b8;
+  cursor: auto;
+}
+input[type="checkbox"]:disabled:before {
+  box-shadow: none;
+  background: #ddd;
+}
+input[type="checkbox"]:checked:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  transform: rotate(45deg);
+}
+span.wpcf7-list-item{
+ margin: 20px 0 0 0;
+}
+.privacy-linktoopen{
+  color: #FFBC0F;
+  text-decoration: underline;
+}
+/* submit  */
+.btn-outline-primary.disabled, .btn-outline-primary:disabled, .wpcf7 input.disabled[type=submit], .wpcf7 input[type=submit]:disabled{
+  margin-top: 40px;
+  border-color: none ;
+  background-color: #FCB920;
+  border: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 30px;
+  width: 30%;
+}
+.btn-outline-primary, .wpcf7 input[type=submit]{
+  margin-top: 40px;
+  background-color: #FCB920;
+  color: #000;
+  width: 30%;
+  border: none;
+  padding: 14px 40px;
+  text-transform: uppercase;
+  font-size: 30px;
+  height: auto;
+}
+.btn-outline-primary:hover, .wpcf7 input[type=submit]:hover {
+  color: #000;
+  background-color: #fff;
+  border:none;
+}
+
+/* form popup  */
+.popup{
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease all;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: rgba(0,0,0,.6);
+  justify-content: center;
+  align-items: center;
+}
+.popup.open{    
+  visibility: visible;
+  opacity: 1;
+}
+.popup-content{
+  display: none;
+  position: relative;
+  max-width: 1080px;
+  margin: 20px;
+  padding: 40px;
+  padding-left: 25%;
+  padding-right: 39px;
+  padding-top: 90px;
+  color: #000;
+  background: #fff;
+}
+.popup.open .popup-content{
+  display: block;
+}
+.popup-content h3{
+  text-transform: uppercase;
+}
+.popup-img{
+  display: none;
+}
+.popup.open .popup-img{
+  display: block;
+}
+.popup-img-circle{
+  position: absolute;
+    left: 7%;
+    right: 0px;
+    top: 9%;
+    width: 30%;
+    height: 50%;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Ellipse-16.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.popup-img{
+  position: absolute;
+  left: 7%;
+  top: 12%;
+  width: 21%;
+  height: 90%;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/shuttle-4-1.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.popup .icon-o-c{
+  transform: rotate(45deg);
+  right: 15px;
+}
+/* privacy popup  */
+.popup-privacy.open .popup-img{
+  display: none;
+}
+.popup-privacy .popup-content{
+  padding-left: 40px;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+/* form footer  */
+.form-page .section-footer{
+  min-height: unset;
+  padding-bottom: 100px;
+  background: #fff;
+  padding-top: unset;
+  color: #000;
+}
+.form-page .section-footer h3 a:hover{
+  color: #000;
+}
+.form-page .section-footer a{
+  color: #000;
+}
+.form-page .section-footer h3 a{
+  color: #FFBC0F;
+}
+.form-page .section-footer a:hover{
+  color: #FFBC0F;
+}
+
+/* organizers  */
+/* section-one  */
+.organizers-page .header-menu{
+  background: #F3F3F3;
+  color: #000;
+}
+.organizers-page .link.apply-now a:hover, .organizers-page .link.program a:hover{
+  background: #fff;
+  color: #FCB920;
+}
+.organizers-page .section-one{
+  background: #F3F3F3;
+  color: #000;
+  min-height: unset;
+  font-weight: 200;
+  position: relative;
+  margin-bottom: -7%;
+}
+.organizers-page .section-one .header-menu a{ 
+  color: #000;
+}
+.organizers-page .section-one h1{
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.organizers-page .section-one p{
+  font-size: 26px;
+}
+.rocket-img{
+  height: 500px;
+  width: 500px;
+  right: -73%;
+  top: 28%;
+  position: absolute;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/rocket.png');
+}
+.org-link-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.org-link-wrap a{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+  height: auto;
+  margin: 20px;
+  align-items: center;
+  box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+  background-color: #232323;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/image-1.png');
+  transition: background 1s ease;
+}
+.org-link-wrap a:hover{
+  background: #FFBC0F;
+}
+a.org-link-btn--first{
+  margin-left: 0;
+}
+.org-link-btn img{
+  width: 50%;
+  margin: 15px;
+}
+
+/* after section one  */
+  .section-wrap-after-section-one{
+    background-image: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/bgtop-1.png'), url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/bgdown-1.png'), url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/bg-minbl.png');
+    background-position: top center, bottom center, center center;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, contain, cover; 
+    min-height: 4910px;
+}
+.organizers-page p{
+  font-weight: 200;
+}
+/* section two */
+.organizers-page .section-two{
+  padding-top: 506px;
+  padding-bottom: 100px;
+  font-size: 26px;
+  color: #fff;
+  background-color: unset;
+}
+.organizers-page .section-two p{
+  font-size: 26px;
+}
+.organizers-page p.header-text{
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.organizers-page .row-for-header-text{
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+.organizers-page .row-for-header-text {
+  margin-top: 160px;
+}
+.organizers-page .link-for-header-text {
+  display: flex;
+  align-items: center;
+}
+.organizers-page .header-text span{
+  color: #FFBC0F;
+}
+a.link-to-company{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  background: #fff;
+  align-items: center;
+  padding: 12px 30px;
+  border-radius: 18px;
+  transition: background-color 1s ease;
+  margin-bottom: 30px;
+}
+a.link-to-company p{
+  margin-bottom: 0;
+  color: #000;
+  font-weight: 200;
+  font-size: 24px;
+}
+a.link-to-company:hover{
+  background-color: #FFBC0F;
+}
+.organizers-page .second-part-of-products{
+  margin-top: 50px;
+}
+.organizers-page .section-two .girl-notebook{
+  width: 341px;
+  height: 387px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/2D1A8359-1.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 326px;
+  top: -10%;
+  border-radius: 18px;
+}
+.organizers-page .section-two .boy-pc{
+  width: 308px;
+  height: 371px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/2D1A8291-1.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  border-radius: 18px;
+}
+.row-with-images{
+  position: relative;
+}
+.row-with-images-first{
+  margin-bottom: 130px;
+}
+.organizers-page .section-two .speaking-g{
+  width: 492px;
+  height: 389px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/2D1A8291-2.png');
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 18px;
+}
+.organizers-page .section-two .discussed-g{
+  width: 492px;
+  height: 521px;
+  background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/2D1A8291-3.png');
+  background-position: left;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 50px;
+  border-radius: 18px;
+}
+.organizers-page .bottom-info{
+  text-align: center;
+  margin-top: 50px;
+}
+.organizers-page .section-two .link a, .organizers-page .section-two-three .link.apply-now{
+  width: 340px;
+}
+.organizers-page .section-two .link.apply-now, .organizers-page .section-two-three .link.apply-now{
+  justify-content: center;
+  margin-top: 20px;
+}
+.organizers-page .section-two-three .link.apply-now{
+  display: inline-block;
+}
+.organizers-page .genesis-link{
+  margin-top: 0;
+}
+
+/* section-two-three  */
+.section-two-three{
+  padding-top: 150px;
+  padding-bottom: 100px;
+  font-size: 26px;
+  color: #fff;  
+}
+.section-two-three #ytplayer{
+  width: 100%;
+  height: 100%;
+}
+.section-two-three p.header-text{
+  margin-bottom: 0;
+}
+.section-two-three .row-after-header-text{
+  margin-top: 95px;
+}
+.ytp-impression-link{
+  display: none!important;
+}
+.ytp-chrome-top.ytp-show-cards-title{
+  display: none !important;
+}
+.ytp-gradient-top{
+  display: none !important;
+}
+.organizers-page .section-two-three .link a{
+  width: 340px;
+  margin: auto;
+}
+.organizers-page .section-two-three .link.apply-now{
+  justify-content: center;
+  margin-top: 20px;
+}
+.metaverse-dev{
+  width: 400px;
+  background: #fff;
+  color: #000;
+  padding: 10px 30px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+}
+.theme-color-orange{
+  color: #FFBC0F;
+}
+.mt-30{
+  margin-top: 30px;
+}
+.mt-60{
+  margin-top: 60px;
+}
+.mt-100{
+  margin-top: 60px;
+}
+.mb-60{
+  margin-bottom: 60px;
+}
+/* form organizers  */
+.form-page .section-footer{
+  min-height: unset;
+  padding-bottom: 100px;
+  background: #fff;
+  padding-top: unset;
+  color: #000;
+}
+.organizers-page .section-footer h3 a:hover{
+  color: #000;
+}
+.organizers-page .section-footer a{
+  color: #000;
+}
+.organizers-page  .section-footer h3 a{
+  color: #FFBC0F;
+}
+.organizers-page .section-footer a:hover{
+  color: #FFBC0F;
+}
+.organizers-page .section-footer{
+  color: #000;
+  background: #fff;
+  padding-top: 0;
+  min-height: unset;
+  margin-bottom: 100px;
+  margin-top: -10%;
+}
+.review-body-info{
+  min-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* phone web  */
+.mobile-only{
+  display: none;
+}
+.desktop-only{
+  display: block;
+}
+/* end phone web  */
+
+/* important for phone web  */
+.Technology.mobile-only{
+  display: none;
+}
+.section-two .desktop-only{
+  display: flex;
+}
+.section-five .desktop-only{
+  display: flex;
+}
+/* important for phone web  */
+
+@media (min-width: 1900px) {
+  .section-one{
+    min-height: 1176px;
+  }
+  .section-three{
+    min-height: 1689px;
+  }
+  .section-footer{
+    min-height: 1060px;
+  }
+  .organizers-page .section-one{
+    margin-bottom: -10%;
+  }
+  .section-wrap-after-section-one{
+    min-height: 5224px;
+  }
+  .organizers-page .section-footer{
+    margin-top: -18%;
+  }
+  .organizers-page .section-two{
+    padding-top: 750px;
+  }
+}
+
+@media (max-width: 700px) {
+  body{
+    font-size: 14px;
+  }
+  .buttons-call-to-action{
+    font-size: 14px;
+  }
+  /* menu mobile  */
+  .wpcf7 .wpcf7-form input[type="checkbox"]{
+    padding: unset;
+  }
+  .apply-now.desktop-only{
+    display: none;
+  }
+  .header-menu{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    padding: 20px 0;
+    background-color: #080808;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/nrocketbgm.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 99;
+  }
+  .header-menu .links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -80%;
+    width: 80%;
+    background: #fff;
+    padding: 40px 0;
+    padding-top: 80px;
+    margin: 0;
+    top: 0;
+  }
+  .header-menu a {
+    color: #000;
+    font-size: 12px;
+  }
+  .header-menu .link{
+    margin-bottom: 20px;
+    justify-content: flex-end;
+  }
+  .header-menu .apply-mobile .link{
+    margin-bottom: 0px;
+  }
+  .header-menu .apply-mobile a{
+    padding: 10px 12px;;
+    width: 77%;
+  }
+
+  #menuToggle{
+    position: relative;
+    z-index: 1;
+  }
+  #menuToggle input
+  {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+  }
+  #menuToggle span
+  {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  #menuToggle span:first-child
+  {
+    transform-origin: 50% 100%;
+  }
+
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 50% 100%;
+  }
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform-origin: 65% 50%;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  .header-menu .links{
+    transition: right 1s ease;
+  }
+  .header-menu .links.menu-show{
+    right: 0;
+    box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 5%);
+  }
+  .section-one h1{
+    font-size: 26px;
+    text-align: center;
+  }
+  p.after-title-text{
+    font-size: 12px;
+    justify-content: center;
+  }
+  .front-page .section-one h1{
+    margin-top: 75px;
+  }
+  .front-page .section-one p{
+    font-weight: 300;
+  }
+  .section-one p img{
+    width: 80px;
+  }
+  p.sub-title-text{
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px;
+    width: unset;
+  }
+  .title-wrap .buttons-call-to-action{
+    justify-content: space-evenly;
+    width: unset;
+  }
+  .buttons-call-to-action .link.apply-now a, .buttons-call-to-action .link.program a{
+    width: unset;
+    height: 40px;
+  }
+  .section-four .link.reversed a svg,  .section-six .link.reversed a svg{
+    margin-left: 10px;
+    width: 20px;
+    padding: 8px auto;
+  }
+
+  /* section one  */
+  .section-one{
+    min-height: 1100px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/Untitled-15.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .section-one-continue .top-text-date{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-one-continue .top-text-date p{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+  }
+  .section-one-continue .top-text{
+    border-right: none;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .join-header{
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  .join-cart.first{
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .join-cart h3{
+    font-size: 14px;
+  }
+  .join-cart{
+    font-size: 12px;
+  }
+  .join-cart .visual{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+  .join-cart.second{
+    margin-left: 0;
+  }
+  .join-cart p{
+    font-size: 12px;
+  }
+  .section-one-continue{
+    margin-top: 0;
+  }
+
+  /* section two  */
+  .section-two{
+    padding-top: 110px;
+  }
+  .section-two h2{
+    font-size: 24px;
+    margin-bottom: 60px;
+  }
+  .section-two h3{
+    font-size: 14px;
+  }
+  .section-two p{
+    font-size: 12px;
+  }
+  .section-two .item{
+    margin-bottom: 20px;
+  }
+  .section-two .item.Program p, .section-two .item.Community p{
+    border: none;
+  }
+
+
+  /* section three  */
+  .section-three{
+    min-height: 483px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/3s.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .section-three h1{
+    font-size: 24px;
+  }
+  .buttons-call-to-action{
+    margin-top: 0;
+  }
+
+  /* section four  */
+  .section-four{
+    padding-bottom: 100px;
+  }
+  .partners{
+    font-size: 18px;
+  }
+  .section-four .link.reversed a{
+    font-size: 12px;
+    padding: 0;
+    height: 30px;
+  }
+  .partner{
+    height: 80px;
+  }
+  .section-four img{
+    width: 95px;
+  }
+
+   /* section five  */
+  .section-five h2{
+    font-size: 24px;
+  }
+  .section-five p{
+    font-size: 14px;
+  }
+  .section-five .program h3{
+    font-size: 16px;
+  }
+  .section-five{
+    padding-top: 115px;
+  }
+  .section-five .program ul li{
+    font-size: 12px;
+    font-weight: 300;
+  }
+  .section-five .program .count{
+    font-size: 18px;
+  }
+
+   /* section six  */
+   .section-six{
+     padding: 100px 0;
+     font-size: 12px;
+   }
+   .section-six h2{
+     font-size: 24px;
+     padding: 0 40px;
+     margin-bottom: 50px;
+   }
+   .section-six h3{
+     font-size: 14px;
+   }
+   .section-six .journey-reviews h3{
+     max-width: 230px;
+   }
+   .section-six .pitch-day, .section-six .meta-certification, .section-six .journey-reviews{
+     width: unset;
+     padding: 25px 23px;
+   }
+   .section-six .pitch-day-img, .section-six .meta-certification-img, .section-six .journey-reviews-img{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/image-10-1.png');
+    background-position: center;
+    background-size: cover;
+    position: unset;
+    right: unset;
+    top: unset;    
+    width: 100%;
+    height: 155px;
+   }
+   .section-six .for-section-six.container.with-meta{
+     margin-top: 80px;
+   }
+   .section-six .for-section-six.container.with-aws{
+     margin-top: 80px;
+   }
+   .section-six .meta-certification-img{
+     background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/image-11-1.png');
+    background-position: center;
+    background-size: cover;     
+   }
+   .section-six .journey-reviews-img{
+     background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/image-12-2.png');
+    background-position: center;
+    background-size: cover;     
+   }
+
+   /* .section-seven  */
+   .section-seven{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/Untitled-17-min.png');
+    min-height: auto;
+    background-position: center;
+    background-size: cover;
+    font-size: 12px;    
+    padding-top: 335px;
+    padding-bottom: 200px;
+   }
+   .section-seven h2{
+     font-size: 24px;
+   }
+   .section-seven .avatar{
+     height: 200px;
+   }
+   .section-seven .slick-dots li button:before{
+     color: #FFBC0F;
+   }
+   .section-seven .slick-dots li.slick-active button:before{
+     color: #FFBC0F;
+   }
+   
+   .section-seven .timeline-preview{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/06/plus07-01.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;    
+    height: 900px;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: -71px;
+   }
+   .section-seven .timeline h2{
+     margin-bottom: 0;
+   }
+
+   /* .section-eight  */
+   .section-eight{
+     padding: 0;
+     margin-top: -100px;
+   }
+   .section-eight .stand-with-ua-img{
+    width: 260px;
+    top: -75px;
+   }
+   .section-eight .ua-img{
+    height: 100%;
+    width: 250px;
+    left: 10px;
+    top: 139px;
+    background-repeat: no-repeat!important;
+    background-size: contain!important;
+   }
+   .section-eight .for-section-eight.container.with-ua{
+     font-size: 12px;
+   }
+   .section-eight .ua{
+    padding: 20px 26px;
+    width: 80%;
+   }
+   .section-eight .buttons-call-to-action .link.apply-now a, .section-eight .buttons-call-to-action .link.program a{
+    padding: 8px 20px;
+     font-size: 16px;
+   }
+   .section-eight .link.apply-now{
+    margin-top: 29px;
+   }
+   .section-eight .for-section-eight.container.with-ua{
+     margin-bottom: 280px;
+   }
+
+     /* <!-- section-nine  -->  */
+   .section-nine h2{
+    font-size: 24px;
+   }
+   .section-nine p{
+    font-size: 14px;
+   }
+   .nine-with-badges{
+     display: flex;
+     justify-content: center;
+   }
+   .top-review-badge{
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 132px;
+    font-size: 18px;
+    padding: 8px 0;
+   }
+   .section-nine .review-badge{
+    font-size: 14px;
+    min-height: unset;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    width: 70%;
+    margin-bottom: 55px;
+   }
+   .section-nine p{
+     font-size: 12px;
+   }
+   .section-nine .slider-review{
+     margin-top: 60px;
+   }
+   .review-body{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/image-21.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   .review-body .avatar{
+     width: 50px;
+     height: 50px;
+   }
+   .review-body .name{
+      padding-left: 70px;
+      margin-top: 0;
+      font-size: 14px;
+   }
+   .review-body .position{
+    padding-left: 70px;
+    font-size: 12px;
+   }
+
+   /* section-ten  */
+   .section-ten h2{
+    font-size: 24px;
+   }
+   .section-ten p{
+    font-size: 14px;
+   }
+   .section-ten h3{
+    font-size: 14px;    
+    padding-right: 50px;
+   }
+   .faq-container p{
+     padding: 0;
+     min-height: 240px;
+   }
+   .icon-o-c{
+     top: 7px;
+     width: 30px;
+     height: 30px;
+   }
+
+   /* section-footer  */
+   .section-footer{
+     background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/ftr.png');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     text-align: center;
+     font-size: 12px;
+     padding-top: 187px;
+      padding-bottom: 100px;
+      min-height: unset;
+   }
+   .section-footer h3{
+      font-size: 14px;
+      margin-top: 30px;
+   }
+   .section-footer a{
+     font-size: 12px;
+     font-weight: 300;
+     margin-bottom: 10px;
+   }
+   .section-footer p{
+     font-size: 12px;
+     font-weight: 300;
+     margin-bottom: 2rem;
+     padding: 0 78px;
+   }
+   .section-footer .mail{
+     margin-top: 10px;
+   }
+   .wpcf7 .wpcf7-form label{
+     font-weight: 300;
+   }
+   
+
+
+  .title-wrap{
+    width: unset;
+    padding-top: 2px;
+  }
+  /* phone web  */
+  .mobile-only{
+    display: block;
+  }
+  .desktop-only{
+    display: none;
+  }
+  /* end phone web  */
+
+  /* important for phone web  */
+  .Technology.mobile-only{
+    display: block;
+  }
+  .section-two .desktop-only{
+    display: none;
+  }
+  .section-five .desktop-only{
+    display: none;
+  }
+  .section-four .desktop-only{
+    display: none;
+  }
+  /* important for phone web  */
+
+  
+  /* form page  */
+  .form-page h1{
+    margin-top: 123px;
+    margin-bottom: 60px;
+  }
+  .form-page .section-one{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/fotoermob-min.png');
+    background-position: 50% 75%;
+    background-size: cover;
+    min-height: 2280px;
+    margin-bottom: -187px;
+  }
+  .wpcf7 .wpcf7-form p{
+    width: 95%;
+  }
+  .btn-outline-primary.disabled, .btn-outline-primary:disabled, .wpcf7 input.disabled[type=submit], .wpcf7 input[type=submit]:disabled{
+    width: 50%;
+    padding: 5px;
+    font-size: 24px;
+  }
+  .btn-outline-primary, .wpcf7 input[type=submit]{
+    width: 50%;
+    padding: 5px;
+    font-size: 24px;
+  }
+  .form-page .section-footer{
+    margin-top: -11px;
+  }
+
+  /* //popup  */
+  .popup-content{
+    height: 85%;
+    padding-top: 94%;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 35%;
+  }
+  .popup-img-circle{
+    left: unset;
+    right: 25%;
+    top: -4%;
+    width: 41%;
+    height: 50%;
+  }
+  .popup-img{    
+    width: 69%;
+    height: 30%;
+    top: 15%;
+  }
+  .popup .icon-o-c{
+    right: 30px;
+    top: 35px;
+  }
+  
+
+  /* Organizers page mobile  */
+  .org-link-wrap{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .org-link-wrap a{    
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    width: 77%;
+    height: 82px;
+  }
+  .organizers-page .section-one p{
+    font-size: 16px;
+    text-align: center;
+  }
+  .orginizers-rocket-wrap{
+    padding-bottom: 112%;
+  }
+  .rocket-img{
+    height: 300px;
+    width: 300px;
+    bottom: 5%;
+    right: 5%;
+    top: unset;
+    position: absolute;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/rocket.png');
+    background-size: cover;
+  }
+  /* .section-wrap-after-section-one  */
+  .section-wrap-after-section-one{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/mb-org.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 4200px;
+  }
+  .metaverse-dev{
+    max-width: 100%;
+  }
+  .organizers-page .section-two .speaking-g{
+    max-width: 100%;
+  }
+  .organizers-page .section-two .discussed-g{
+    max-width: 100%;
+  }
+  .organizers-page .section-two{
+    padding-top: 25px;
+  }
+  .organizers-page .link-for-header-text{
+    justify-content: center;
+  }
+  .organizers-page .link-for-header-text img{
+    width: 150px;
+  }
+  .organizers-page p.header-text{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  .organizers-page .section-two p{
+    font-size: 14px;
+  }
+  .organizers-page .section-two .girl-notebook{
+    width: 161px;
+    height: 193px;
+    left: 20px;
+    right: unset;
+  }
+  .organizers-page .section-two .boy-pc{
+    width: 161px;
+    height: 193px;
+    right: 20px;
+  }
+  .organizers-page .row-with-images-first p{
+    margin-top: 50%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+  }
+  .row-with-images-first{
+    margin-bottom: 70px;
+  }
+  .organizers-page .section-two .speaking-g{
+    max-width: 90%;
+    width: 339px;
+    height: 215px;
+    left: 5%;
+  }
+  .organizers-page p.row-with-images-second-p{
+    margin-top: 70%;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 100;
+  }
+  .organizers-page a.link-to-company{
+    width: 80%;
+    margin: 20px auto;
+  }
+  .organizers-page a.link-to-company img{
+    height: 30px;
+  }
+  .organizers-page .section-two .discussed-g{
+    max-width: 90%;
+    width: 338px;
+    height: 216px;
+    left: 5%;
+  }
+  .organizers-page .second-part-of-products{
+    margin-top: 80%;
+  }
+  .organizers-page .section-two p{
+    text-align: center;
+  }
+  /* .section-two-three  */
+  .organizers-page .section-two-three{
+    padding-top: 35px;
+  }
+  .organizers-page .section-two-three .header-text{
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .organizers-page .section-two-three .row-after-header-text{
+    margin-top: 30px;
+  }
+  .organizers-page .section-two-three p{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .metaverse-te{
+    text-align: center;
+  }
+  .metaverse-dev{
+    width: 80%;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+  .organizers-page .section-two-three .link.apply-now{
+    font-size: 16px;
+    margin: 20px auto;
+  }
+  .organizers-page .section-two .link.apply-now, .organizers-page .section-two-three .link.apply-now{
+    font-size: 16px;
+  }
+  .organizers-page .section-two .link a, .organizers-page .section-two-three .link.apply-now{
+    width: 160px;
+  }
+  .organizers-page .section-two-three .link a{
+    width: 100%;
+  }
+
+  .popup-privacy .popup-content{
+    padding-top: 20%;
+  }
+  .img-partner-link{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .partner a{
+    padding: 0px;
+  }
+  .buttons-call-to-action .link.apply-now a,.buttons-call-to-action .link.program a{
+    padding: 8px 21px;
+  }
+  .review-body{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    min-height: 490px;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .review-body-info{
+    position: relative;
+    min-height: unset;
+  }
+  .review-body .avatar{
+    position: absolute;
+    top: 0;
+  }
+  .section-five .program{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .review-body{
+    border-radius: 18px;
+  }
+  .icon-o-c{
+    top: 22px;
+  }
+  .section-footer h3 a{
+    font-size: 14px;
+  }
+  .section-six .link.reversed a{
+    max-width: 150px;
+    font-size: 12px;
+  }
+}
+
+
+/* edits 03/05/2022 */
+.section-one-continue .fp-pd{
+  padding-right: 40px;
+}
+.section-one-continue .top-text-date{
+  padding-left: 90px;
+}
+#standWithUkraine .link.apply-now a:hover{
+  background: #000;
+  color: #fff;
+}
+.wpcf7-form-control-wrap input.wpcf7-form-control{
+  font-weight: 200;
+}
+.wpcf7-form-control-wrap select.wpcf7-form-control{
+  font-weight: 200;
+}
+/* .wpcf7-form-control-wrap select.wpcf7-form-control option{
+  font-weight: 200;
+} */
+.partner.p-aws{
+  display: flex;
+  justify-content: center;
+}
+.partner.p-aws a{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* edits 04/05/2022 */
+/* hrst */
+@media (max-width: 700px) {
+  .section-one-continue .top-text-date{
+    padding-left: 15px;
+  }
+  .section-six{
+    padding-bottom: 0;
+  }
+  .timeline-preview-wrap{
+    min-height: 780px;
+    max-width: 100%;
+    margin-left: unset;
+  }
+  .section-one{
+    position: relative;
+  }
+  .front-page .section-one{
+    min-height: 890px;
+  }
+  .rocket-on-bg{
+    width: 260px;
+    height: 260px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/shuttle-4.svg');
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    bottom: 15%;
+    left: 29px;
+    background-repeat: no-repeat;
+  }
+  body{
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1700px) {
+  .front-page .section-one{
+    min-height: 1100px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/4rocketb.png');
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+  }  
+  .front-page .section-seven{
+    min-height: 4200px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/newbgexprt.png-1-scaled.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+  .section-seven h2{
+    margin-bottom: 70px;
+    margin-top: 120px;
+  }
+  .section-seven .timeline h2{
+    margin-bottom: 40px;
+    margin-top: 77px;
+  }
+  .section-seven .timeline-preview{
+    /* margin-left: -10%; */
+    position: absolute;
+    width: 140%;
+    left: -20%;
+    margin-left: unset;
+  }
+  .section-footer{
+    background-position: top;
+  }
+  /* organizers  */
+  .organizers-page .row-for-header-text{
+    margin-top: 350px;
+  }
+  .section-wrap-after-section-one{
+    min-height: 5293px;
+    margin-top: -235px;
+    margin-bottom: -300px;
+  }
+}
+/* kast + hr*/
+@media only screen and (min-device-width: 1400px) {
+  .front-page #enroll .container{
+    max-width: 1250px!important;
+  }
+  .front-page .section-three{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/hwbg2.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .front-page .section-three h1{
+    max-width: 80%;
+    display: inline-block;
+    padding-top: 60px;
+  }
+  .section-one-continue .container{
+    max-width: 1180px;
+  }
+}
+/* only kast */
+@media only screen and (min-device-width: 1435px) and (max-device-width: 1445px) {
+  /* .section-seven .timeline-preview-icons{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/dtimel-wsvg.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  .front-page .section-seven{
+    min-height: 4020px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/newsbggg-min.png');
+    background-position: center;
+    background-size: cover;
+  } */
+  .form-page .section-one{
+    min-height: 2222px;
+    margin-bottom: -16%;
+  }
+}
+/* only hr*/
+@media only screen and (min-device-width: 1780px) and (max-device-width: 1800px) {
+  .section-seven .timeline-preview-icons{
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/05/dtimel-wsvg.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 129%;
+    top: -1%;
+    left: -14.5%;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+@media (min-width: 1900px) {
+  .front-page .section-seven{
+    min-height: 4020px;
+    background: url('https://genesis-startup-academy.com/wp-content/uploads/2022/04/bg-big.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+  }
+}
+/* only ipad*/
+@media only screen and (min-device-width: 700px) and (max-device-width: 1024px) {
+	.wpcf7 .wpcf7-form input[type=checkbox]{
+	  padding: unset;
+	}
+}
+
+/* after 01/06/22 */
+.form-page form p:nth-child(11){
+  flex-direction: column;
+}
+.form-page form p:nth-child(11) label{
+  margin-bottom: -5px;
+}
+.under-country{
+  font-size: 11px;
+}
+.form-page form p:nth-child(10){
+  align-self: baseline;
+}
+@media (min-width: 2500px) {
+  .form-page .section-one {
+    background-position: 50% 75%;
+  }
+}
+
+.mt-50{
+  margin-top: 50px;
+}
