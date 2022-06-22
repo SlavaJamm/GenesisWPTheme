@@ -4,4 +4,4 @@ Krystyna Zavodniuk is absolutely amazing designer that creates this awesome them
 
 Developed by Viacheslav Kvaratskheliia
 
-Website: http://genesis-startup-academy.com/
+Website: [https://genesis-startup-academy.com/]
